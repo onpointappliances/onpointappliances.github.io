@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ON POINT HOME APPLIANCE SERVICES in Pune. AC, refrigerator, washing machine, microwave and oven repair. Call or WhatsApp 92260 75821.">
+  <meta name="theme-color" content="#0b1830">
+  <title>ON POINT HOME APPLIANCE SERVICES | Pune</title>
+  <style>
+    :root {
+      --navy: #0b1830;
+      --navy-2: #12294a;
+      --blue: #1769e8;
+      --cyan: #36d5dc;
+      --ink: #14233b;
+      --muted: #64748b;
+      --paper: #f4f8fd;
+      --white: #fff;
+      --line: #e3ebf5;
+      --shadow: 0 18px 48px rgba(11, 24, 48, .10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); line-height: 1.6; background: var(--white); }
+    a { text-decoration: none; }
+    .topbar { background: #071326; color: #d8e7fb; text-align: center; padding: 8px 16px; font-size: 13px; }
+    header { background: var(--navy); color: var(--white); padding: 17px 6%; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+    .brand { color: white; font-weight: 900; font-size: 18px; letter-spacing: .5px; line-height: 1.25; }
+    .brand span { color: var(--cyan); }
+    nav { display: flex; gap: 23px; align-items: center; flex-wrap: wrap; }
+    nav a { color: #e8f1ff; font-size: 14px; font-weight: 700; }
+    nav a:hover { color: var(--cyan); }
+    .nav-call { background: var(--cyan); color: var(--navy); padding: 10px 16px; border-radius: 9px; font-weight: 800; }
+    .hero { color: white; padding: 76px 7% 82px; background: radial-gradient(circle at 85% 20%, rgba(54,213,220,.28), transparent 28%), linear-gradient(125deg, #0b1830 0%, #124b98 62%, #087f9a 100%); }
+    .hero-inner { max-width: 1120px; margin: auto; display: grid; grid-template-columns: 1.25fr .75fr; gap: 42px; align-items: center; }
+    .eyebrow { display: inline-block; color: #a8f7f5; font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { font-size: clamp(38px, 5.4vw, 62px); line-height: 1.05; margin: 16px 0 18px; letter-spacing: -1.5px; }
+    .hero p { color: #e1efff; font-size: 18px; max-width: 650px; margin: 0 0 25px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 14px 21px; border-radius: 10px; font-weight: 800; transition: transform .2s, box-shadow .2s; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.18); }
+    .btn-light { background: white; color: var(--navy); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.75); color: white; }
+    .hero-panel { background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.2); border-radius: 22px; padding: 27px; backdrop-filter: blur(8px); box-shadow: 0 18px 50px rgba(0,0,0,.13); }
+    .hero-panel .big-icon { font-size: 54px; }
+    .hero-panel h2 { margin: 8px 0 5px; font-size: 23px; }
+    .hero-panel p { font-size: 15px; margin: 0; }
+    .quick-points { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 22px; }
+    .quick-points div { background: rgba(255,255,255,.10); border-radius: 10px; padding: 11px; font-size: 13px; font-weight: 700; }
+    section { padding: 68px 7%; }
+    .wrap { max-width: 1120px; margin: auto; }
+    .section-head { text-align: center; max-width: 720px; margin: 0 auto 34px; }
+    .kicker { color: var(--blue); text-transform: uppercase; letter-spacing: 1.8px; font-size: 11px; font-weight: 900; }
+    .section-title { color: var(--navy); font-size: clamp(28px, 4vw, 38px); line-height: 1.15; margin: 8px 0 10px; }
+    .intro { color: var(--muted); margin: 0; }
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 17px; }
+    .service-card { border: 1px solid var(--line); border-radius: 17px; padding: 25px 21px; background: white; box-shadow: 0 8px 24px rgba(16,35,63,.045); transition: transform .2s, box-shadow .2s; }
+    .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .service-icon { width: 58px; height: 58px; border-radius: 15px; display: grid; place-items: center; background: #eaf5ff; font-size: 30px; }
+    .service-card h3 { color: var(--navy); margin: 15px 0 7px; font-size: 18px; }
+    .service-card p { color: var(--muted); font-size: 14px; margin: 0; }
+    .about-section { background: var(--paper); }
+    .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 35px; align-items: center; }
+    .about-copy p { color: #53647b; }
+    .feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 23px; }
+    .feature { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 13px; font-weight: 700; font-size: 14px; }
+    .owner-card { background: linear-gradient(145deg, var(--navy), #174b88); color: white; border-radius: 20px; padding: 30px; box-shadow: var(--shadow); }
+    .owner-card .monogram { width: 62px; height: 62px; border-radius: 18px; background: var(--cyan); color: var(--navy); display: grid; place-items: center; font-size: 25px; font-weight: 900; }
+    .owner-card h3 { margin: 18px 0 2px; font-size: 24px; }
+    .owner-card .role { color: #b8d8f8; margin: 0 0 18px; }
+    .owner-card p { margin: 8px 0; color: #e5f1ff; }
+    .contact-section { background: linear-gradient(120deg, #0b1830, #124b98); color: white; text-align: center; }
+    .contact-section .section-title { color: white; }
+    .contact-section .intro { color: #d8e8fb; margin-bottom: 25px; }
+    .contact-details { margin-top: 20px; color: #d8e8fb; font-size: 14px; }
+    footer { background: #071326; color: #aebed3; text-align: center; padding: 19px 15px; font-size: 13px; }
+    @media (max-width: 850px) {
+      .hero-inner, .about-grid { grid-template-columns: 1fr; }
+      .hero-panel { max-width: 520px; }
+      .services-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 560px) {
+      header { padding: 16px 5%; }
+      .brand { font-size: 16px; }
+      nav { gap: 14px; }
+      nav a { font-size: 13px; }
+      .nav-call { padding: 8px 11px; }
+      .hero { padding: 55px 6% 60px; }
+      .hero p { font-size: 16px; }
+      section { padding: 54px 6%; }
+      .services-grid { grid-template-columns: 1fr 1fr; gap: 11px; }
+      .service-card { padding: 17px 14px; }
+      .service-card h3 { font-size: 16px; }
+      .service-card p { font-size: 13px; }
+      .feature-list { grid-template-columns: 1fr; }
+      .quick-points { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Pune • Home Appliance Repair & Service • Call / WhatsApp: 92260 75821</div>
+  <header>
+    <a class="brand" href="#">ON POINT <span>HOME APPLIANCE SERVICES</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-call" href="tel:+919226075821">Call Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Home appliance repair & service • Pune</div>
+          <h1>Reliable Repair.<br>Service You Can Count On.</h1>
+          <p>Professional repair and servicing for your home appliances. Contact us for AC, refrigerator, washing machine, microwave and oven service.</p>
+          <div class="actions">
+            <a class="btn btn-light" href="tel:+919226075821">📞 Call 92260 75821</a>
+            <a class="btn btn-outline" href="https://wa.me/919226075821?text=Hello%20ON%20POINT%20HOME%20APPLIANCE%20SERVICES%2C%20I%20need%20a%20repair%20service.">WhatsApp Now</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="big-icon">🛠️</div>
+          <h2>Appliance care made simple</h2>
+          <p>Tell us what appliance needs attention. Call or WhatsApp to discuss the problem and arrange a service visit.</p>
+          <div class="quick-points">
+            <div>❄️ AC service</div>
+            <div>🧊 Fridge repair</div>
+            <div>🧺 Washing machine</div>
+            <div>🍽️ Microwave & oven</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">What we repair</div>
+          <h2 class="section-title">Our Home Appliance Services</h2>
+          <p class="intro">One place for your essential home appliance repair and service needs.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><div class="service-icon">❄️</div><h3>AC Repair & Service</h3><p>Air conditioner inspection, repair and servicing.</p></article>
+          <article class="service-card"><div class="service-icon">🧊</div><h3>Refrigerator Repair</h3><p>Fridge troubleshooting, repair and maintenance.</p></article>
+          <article class="service-card"><div class="service-icon">🧺</div><h3>Washing Machine Repair</h3><p>Washing machine diagnosis and repair service.</p></article>
+          <article class="service-card"><div class="service-icon">🍽️</div><h3>Microwave & Oven Repair</h3><p>Microwave and oven inspection and repair.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <div class="kicker">About our service</div>
+          <h2 class="section-title">Your appliance service contact in Pune</h2>
+          <p><strong>ON POINT HOME APPLIANCE SERVICES</strong> provides home appliance repair and service in Pune. We aim to make getting help simple: contact us, describe the appliance issue, and arrange a service visit.</p>
+          <p>Service enquiries are welcome from Pune and surrounding areas. Please call or WhatsApp to confirm service availability for your location.</p>
+          <div class="feature-list">
+            <div class="feature">✓ Multiple appliance services</div>
+            <div class="feature">✓ Direct phone & WhatsApp contact</div>
+            <div class="feature">✓ Service enquiries across Pune</div>
+            <div class="feature">✓ Speak directly with the service contact</div>
+          </div>
+        </div>
+        <aside class="owner-card">
+          <div class="monogram">OP</div>
+          <h3>TAUFIQ SHEIKH</h3>
+          <p class="role">Owner & Service Contact</p>
+          <p>📍 Bhavani Peth, Camp, Pune</p>
+          <p>📞 92260 75821</p>
+          <a class="btn btn-light" style="margin-top:14px" href="https://wa.me/919226075821?text=Hello%2C%20I%20need%20home%20appliance%20repair%20service.">Message on WhatsApp</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="wrap">
+        <div class="kicker" style="color:#9cf5f4">Get in touch</div>
+        <h2 class="section-title">Need a Repair?</h2>
+        <p class="intro">Call or WhatsApp us to discuss your appliance problem and confirm service availability.</p>
+        <div class="actions" style="justify-content:center">
+          <a class="btn btn-light" href="tel:+919226075821">Call 92260 75821</a>
+          <a class="btn btn-outline" href="https://wa.me/919226075821?text=Hello%2C%20I%20need%20home%20appliance%20repair%20service.">WhatsApp Now</a>
+        </div>
+        <div class="contact-details">ON POINT HOME APPLIANCE SERVICES · Bhavani Peth, Camp, Pune</div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 ON POINT HOME APPLIANCE SERVICES · Pune · All rights reserved</footer>
+</body>
+</html>
